@@ -1,0 +1,66 @@
+.formu {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    background-color: #6b00b3;
+    padding: 20px 50px;
+    border-radius: 3px;
+    color: white;
+
+    label {
+        margin-top: 10px;
+        display: block;
+    }
+
+    input, select, textarea {
+        padding: 10px;
+        width: 100%;
+    }
+
+    textarea {
+        min-height: 100px;
+        max-width: 100%;
+    }
+
+    fieldset {
+        margin-top: 15px;
+    }
+
+    legend {
+        background-color: rebeccapurple;
+        padding: 5px;
+        border-radius: 5px;
+        margin-left: 10px;
+        border: 1px solid white;
+    }
+
+    input[type=submit], input[type=reset] {
+        background-color: rgb(197, 163, 91);
+        margin: 3px 0;
+        font-weight: bold;
+        color:#fff;
+        font-size: 1em;
+    }
+
+    #envio, #newsletter {
+        margin-top: 30px;
+    }
+
+    label[for=envio], label[for=newsletter] {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 960px) {
+        & {
+            width: 65%;
+            padding: 5px 5px;
+        }
+    }
+    @media (max-width: 768px) {
+        & {
+            width: 80%;
+            padding: 5px 5px;
+        }
+    }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="main-header">
+
+        <input type="checkbox" id="menu">
+
+        <div class="search-bar">
+            <a href="index.html" class="search-bar__logo-container">
+            </a>
+            <form class="search-bar__form-container">
+                <label class="search-bar__form-label" for="busqueda">Buscá tus productos aquí</label>
+                <input class="search-bar__form-search" id="busqueda" type="search">
+                <input class="search-bar__form-submit" type="submit" value="Buscar">
+            </form>
+            <a class="search-bar__carrito-container" href="#">
+            </a>
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__pan-arriba"></span>
+                    <span class="menu-toggle__medallon"></span>
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Alta de producto</h1>
+            <form class="formu" action="alta.php" method="post" enctype="multipart/form-data">
+
+                <input type="hidden" name="promocion" value="HOTSALE">
+        
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" name="nombre" autofocus required minlength="2" maxlength="30">
+                </div>
+        
+                <div>
+                    <label for="precio">Precio:</label>
+                    <input type="number" id="precio" name="precio" required min="0" step="50">
+                </div>
+        
+                <div>
+                    <label for="stock">Stock:</label>
+                    <input type="number" id="stock" name="stock" max="100" step="10">
+                </div>
+        
+                <div>
+                    <label for="marca">Marca:</label>
+                    <select id="marca" name="marca">
+                        <option value="">Seleccioná una marca</option>
+                        <option value="4">Apple</option>
+                        <option value="37">JBL</option>
+                        <option value="14">Samsung</option>
+                        <option value="2">Panasonic</option>
+                        <option value="20">Sony</option>
+                        <option value="75">LG</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="foto">Foto:</label>
+                    <input type="file" id="foto" name="foto">
+                </div>
+                
+                <div>
+                    <label for="detalles">Detalles:</label>
+                    <textarea id="detalles" name="detalles"></textarea>
+                </div>
+                
+                <div>
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria" size="4" multiple>
+                        <optgroup label="Electrónica">
+                            <option value="70">TV</option>
+                            <option value="20">Drone</option>
+                            <option value="4" selected>Smartphone</option>
+                            <option value="19">Cámara</option>
+                        </optgroup>
+                        <optgroup label="Accesorios">
+                            <option value="45">Parlante común</option>
+                            <option value="17">Parlante portátil</option>
+                            <option value="2">TV Cast</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="garantia">Garantía:</label>
+                    <select id="garantia" name="garantia">
+                        <option value="">Seleccioná una garantía</option>
+                        <option value="6">6 meses</option>
+                        <option value="12">12 meses</option>
+                        <option value="18">18 meses</option>
+                        <option value="24">24 meses</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="envio" name="envio" value="si">
+                    <label for="envio">Envío sin cargo</label>
+                </div>
+                
+                <div>
+                    <input type="submit" value="Dar de alta">
+                    <input type="reset" value="Restablecer el formulario">
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="columna">
+            <a href="#"><h4>Categorías</h4></a>
+            <ul>
+                <a href="#">
+                    <li>Celulares</li>
+                </a>
+                <a href="#">
+                    <li>Smart TV</li>
+                </a>
+                <a href="#">
+                    <li>Notebooks</li>
+                </a>
+                <a href="#">
+                    <li>Accesorios</li>
+                </a>
+                <a href="#">
+                    <li>Cámaras</li>
+                </a>
+            </ul>
+        </div>
+        <div class="columna">
+            <a href="#"><h4>Servicios</h4></a>
+            <ul>
+                <a href="#">
+                    <li>Comprá con crédito</li>
+                </a>
+                <a href="#">
+                    <li>Área clientes</li>
+                </a>
+                <a href="#">
+                    <li>Estado de cuenta</li>
+                </a>
+                <a href="#">
+                    <li>Cupón de cancelación</li>
+                </a>
+                <a href="#">
+                    <li>Pedir turno</li>
+                </a>
+            </ul>
+        </div>
+        <div class="columna">
+            <a href="#"><h4>Connecticus</h4></a>
+            <ul>
+                <a href="#">
+                    <li>Sucursales</li>
+                </a>
+                <a href="#">
+                    <li>Trabajá con nosotros</li>
+                </a>
+                <a href="#">
+                    <li>Política de privacidad</li>
+                </a>
+                <a href="#">
+                    <li>Hot Sale</li>
+                </a>
+                <a href="#">
+                    <li>Términos y condiciones</li>
+                </a>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

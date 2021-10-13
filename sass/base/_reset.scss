@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+
+    main section {
+        padding: 1em;
+        background-color: #f1f2f3;
+    }
+
+    h1 {
+        color: rgba(12, 12, 12, 0.8);
+        font-size: 1.5em;
+    }
+}
