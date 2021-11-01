@@ -229,7 +229,7 @@ body {
 }
 
 .search-bar__logo-container {
-  background-image: url(../../img/logo.png);
+  background-image: url(../img/logo.png);
   background-repeat: no-repeat;
   background-size: contain;
   -ms-flex-preferred-size: 10%;
@@ -271,7 +271,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 3em;
           flex: 0 0 3em;
-  background-image: url(../../img/cart.png);
+  background-image: url(../img/cart.png);
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 10px;

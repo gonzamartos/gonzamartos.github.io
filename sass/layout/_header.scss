@@ -83,7 +83,7 @@
     }
     
     &__logo-container {
-        background-image: url(../../img/logo.png);
+        background-image: url(../img/logo.png);
         background-repeat: no-repeat;
         background-size: contain;
         flex-basis: 10%;
@@ -116,7 +116,7 @@
     
     &__carrito-container {
         flex: 0 0 3em;
-        background-image: url(../../img/cart.png);
+        background-image: url(../img/cart.png);
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: 10px;
